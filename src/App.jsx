@@ -22,7 +22,7 @@ const Part = (props) => {
   )
 }
 const Total = (props) => {
-  const sum = props.part1 + props.part2 + props.part3
+  const sum = props.part1.exercises + props.part2.exercises + props.part3.exercises
   return(
     <section>
       <p>Number of exercises {sum}</p>
@@ -55,9 +55,9 @@ const App = () => {
       part3 = {part3}
       />
       <Total 
-      part1 = {part1.exercises}
-      part2 = {part2.exercises}
-      part3 = {part3.exercises} />
+      part1 = {part1}
+      part2 = {part2}
+      part3 = {part3} />
     </>
   )
 }
