@@ -1,5 +1,5 @@
 const Total = (props) => {
-    const sum = props.part1.exercises + props.part2.exercises + props.part3.exercises
+    const sum = props.parts[0].exercises + props.parts[1].exercises + props.parts[2].exercises
     return(
       <section>
         <p>Number of exercises {sum}</p>
